@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FE Task 4 - Business Keeper GmbH</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .container {
+      max-width: 800px;
+      background: #f0f4fa;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form  class="mt-4 p-3" novalidate>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="form-subject">a) Subject</label>
+          <input type="text" class="form-control" id="form-subject" value="" placeholder="Subject">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-12 mb-3">
+          <p class="mb-0">b) Do you want to state your name?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="radio1" value="yes" checked>
+            <label class="form-check-label" for="radio1">Yes</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="radio2" value="no">
+            <label class="form-check-label" for="radio2">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="first-name">c) First name</label>
+          <input type="text" class="form-control" id="first-name" value="" placeholder="First Name">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="last-name">d) Last name</label>
+          <input type="text" class="form-control" id="last-name" value="" placeholder="Last Name">
+        </div>
+        <div class="col-md-12 mb-3">
+          <label for="email">e) Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="country">f) Country</label>
+          <select class="custom-select" id="country">
+            <option selected>- Please Choose -</option>
+            <option>Germany</option>
+            <option>Austria</option>
+            <option>Switzerland</option>
+            <option>Poland</option>
+            <option>Netherlands</option>
+            <option>France</option>
+            <option>Italy</option>
+            <option>Other Country</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="other-country">g) Define Other</label>
+          <input type="text" class="form-control" id="other-country" value="" placeholder="Other
+Country">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-8 mb-3">
+          <label for="city">h) City</label>
+          <input type="text" class="form-control" id="city" placeholder="Berlin">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="zip">i) Zip</label>
+          <input type="text" class="form-control" id="zip" placeholder="12345">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-12 mb-3">
+          <label for="textarea">j) Additional Informations</label>
+          <textarea class="form-control" id="textarea" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+          <label class="form-check-label" for="invalidCheck">
+            k) Agree to terms and conditions
+          </label>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">l) Submit form</button>
+      <div id="message"></div>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
